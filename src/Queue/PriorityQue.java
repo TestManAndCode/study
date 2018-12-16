@@ -40,11 +40,21 @@ public class PriorityQue {
             System.out.println("队列已满");
             return;
         }
-        items++;
         //TODO使用插入排序从大到小的顺序排列
         if (isEmpty()) {
             array[0] = o;
+        } else {
+            for (int i = 1; i < array.length; i++) {
+                int j = i;
+                while (j > 0 && o > array[j - 1]) {
+                    array[j] = array[j - 1];
+                    j--;
+                }
+                array[j] = o;
+            }
         }
+        items++;
+
     }
 
     public boolean isEmpty() {
@@ -62,7 +72,6 @@ public class PriorityQue {
         front++;
         if (isEmpty()) {
             front = 0;
-            rear = -1;
         }
         return o;
     }
