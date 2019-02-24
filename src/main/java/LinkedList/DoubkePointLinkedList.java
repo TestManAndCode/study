@@ -1,9 +1,9 @@
-package LinkedList;
+package main.java.LinkedList;
 
 /**
  * 双端链表
  */
-public class DoubkePointLinkedList extends SingleLinkedList {
+public class DoubkePointLinkedList extends LinkedList.SingleLinkedList {
     private Node head;
     private Node last;
     private int size;

@@ -1,11 +1,14 @@
-package Queue;
+package main.java.Queue;
 
 /**
  * 队列先进先出
- * 优先级队列
+ * 1.单向队列
+ * 2.双向队列
+ * 3.有序队列
  */
-public class PriorityQue {
-    private int[] array;
+//TODO 双端队列记得找时间实现
+public class MyQueue {
+    private Object[] array;
     //前端
     private int front;
     //末端
@@ -15,68 +18,60 @@ public class PriorityQue {
     //实际数量
     private int items;
 
-    public PriorityQue() {
+    public MyQueue() {
         front = 0;
         rear = -1;
         maxSize = 50;
         items = 0;
-        array = new int[maxSize];
+        array = new Object[maxSize];
     }
 
-    public PriorityQue(int length) {
+    public MyQueue(int length) {
         front = 0;
         rear = -1;
         maxSize = length;
         items = 0;
-        array = new int[maxSize];
+        array = new Object[maxSize];
     }
 
     public boolean isFull() {
         return (items == maxSize);
     }
 
-    public void insert(int o) {
+    public void insert(Object o) {
         if (isFull()) {
             System.out.println("队列已满");
             return;
         }
-        //TODO使用插入排序从大到小的顺序排列
-        if (isEmpty()) {
-            array[0] = o;
-        } else {
-            for (int i = 1; i < array.length; i++) {
-                int j = i;
-                while (j > 0 && o > array[j - 1]) {
-                    array[j] = array[j - 1];
-                    j--;
-                }
-                array[j] = o;
-            }
-        }
+        rear++;
         items++;
-
+        if (rear >= maxSize) {
+            rear = 0;
+        }
+        array[rear] = o;
     }
 
     public boolean isEmpty() {
         return (items == 0);
     }
 
-    public int remove() {
+    public Object remove() {
         if (isEmpty()) {
             System.out.println("队列为空");
-            return -1;
+            return false;
         }
         items--;
-        int o = array[front];
-        array[front] = -1;
+        Object o = array[front];
+        array[front] = null;
         front++;
         if (isEmpty()) {
             front = 0;
+            rear = -1;
         }
         return o;
     }
 
-    public int peekFirst() {
+    public Object peekFirst() {
         return array[front];
     }
 

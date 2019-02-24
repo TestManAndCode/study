@@ -1,4 +1,4 @@
-package Array;
+package main.java.Array;
 
 /**
  * 假设操作人是不会添加重复元素的，

@@ -1,6 +1,8 @@
-package test;
+package main.java.test;
 
-import Array.MyArray;
+import main.java.Array.MyArray;
+
+;
 
 public class TestMyArray {
     public static void main(String[] args) {

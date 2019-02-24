@@ -1,6 +1,5 @@
-package LinkedList;
+package main.java.LinkedList;
 
-import Entity.Node;
 
 /**
  * 单向链表

@@ -1,4 +1,5 @@
-package Array;
+package main.java.Array;
+
 
 /**
  * 直接插入排序

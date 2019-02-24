@@ -1,4 +1,4 @@
-package Entity;
+package main.java.Entity;
 
 public class Node {
     private String name;

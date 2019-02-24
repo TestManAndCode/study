@@ -1,4 +1,4 @@
-package Array;
+package main.java.Array;
 
 /**
  * 冒泡算法
