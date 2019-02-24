@@ -1,4 +1,4 @@
-package main.java.Queue;
+package Queue;
 
 /**
  * 队列先进先出

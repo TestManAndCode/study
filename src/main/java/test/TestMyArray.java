@@ -1,6 +1,7 @@
-package main.java.test;
+package test;
 
-import main.java.Array.MyArray;
+
+import Array.MyArray;
 
 ;
 

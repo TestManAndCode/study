@@ -1,8 +1,8 @@
-package main.java.test;
+package test;
 
 
-import main.java.Stack.ArrayStack;
-import main.java.Stack.MyStactk;
+import Stack.ArrayStack;
+import Stack.MyStactk;
 
 public class TestMyStactk {
     public static void main(String[] args){

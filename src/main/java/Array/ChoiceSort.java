@@ -1,4 +1,4 @@
-package main.java.Array;
+package Array;
 
 /**
  * 选择排序

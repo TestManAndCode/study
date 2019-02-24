@@ -1,8 +1,8 @@
-package main.java.test;
+package test;
 
 
-import main.java.Queue.MyQueue;
-import main.java.Queue.PriorityQue;
+import Queue.MyQueue;
+import Queue.PriorityQue;
 
 public class TestMyQueue {
     public static void main(String[] args) {

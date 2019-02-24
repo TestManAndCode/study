@@ -1,4 +1,4 @@
-package main.java.LinkedList;
+package LinkedList;
 
 public class TwoWayLinkedList {
     private Node head;

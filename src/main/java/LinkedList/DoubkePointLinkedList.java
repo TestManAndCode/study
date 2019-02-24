@@ -1,4 +1,4 @@
-package main.java.LinkedList;
+package LinkedList;
 
 /**
  * 双端链表

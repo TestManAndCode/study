@@ -1,4 +1,4 @@
-package main.java.Stack;
+package Stack;
 
 /**
  * 用数组做一个固定长度的先进后出的栈
